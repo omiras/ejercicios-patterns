@@ -14,8 +14,8 @@ Carácteres en minúsculas, excepto el primero, que debe ser en mayúsculas
 El usuario puede poner uno o dos apellidos, separado por un espacio
 La primera letra de cada apellido, en mayúsculas
 
-* Valida: Maria Jimenez
-* No valida: Maria **j**imenez
+* Valida: Ruiz Diaz, Ruiz
+* No valida: Ruiz diaz
 
 # DNI
 
