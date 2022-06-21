@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,25 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
+
 <body>
     <form action="">
         <label for="nombre">Nombre</label>
-        <input class="w3-input" type="text" placeholder="Maria" pattern="[A-Z][a-z]+" >
+        <input class="w3-input" type="text" placeholder="Maria" pattern="[A-Z][a-z]{1,20}"
+            title="El nombre debería contener como mucho 20 carácteres.">
         <label for="apellidos">Apellidos</label>
-        <input class="w3-input" type="text" placeholder="Maria Jimenez" >
+        <input class="w3-input" type="text" placeholder="Maria Jimenez">
         <label for="dni">DNI</label>
-        <input class="w3-input" type="text" placeholder="40536567U" >
+        <input class="w3-input" type="text" placeholder="40536567U">
         <label for="efectivo">Dinero en efectivo</label>
-        <input class="w3-input" type="text" placeholder="22.30" >
+        <input class="w3-input" type="text" placeholder="22.30">
         <label for="numero_movil">Número móvil</label>
-        <input class="w3-input" type="text" placeholder="666777888 +34666777888" >
+        <input class="w3-input" type="text" placeholder="666777888 +34666777888">
         <label for="mascota">Nombre mascota</label>
-        <input class="w3-input" type="text" placeholder="LoKi" >
+        <input class="w3-input" type="text" placeholder="LoKi">
         <input type="submit" value="Validar">
-        
+
     </form>
 </body>
+
 </html>
