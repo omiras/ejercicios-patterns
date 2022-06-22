@@ -8,10 +8,14 @@
  */
 function validatePIN(pin) {
     //return true or false
+    return /^\d{4}$|^\d{6}$/g.test(pin);
+
 }
 
 console.log(validatePIN("123")) // false
 console.log(validatePIN("123a")) // false
+
+console.log(validatePIN("12345")) // false
 
 console.log(validatePIN("098765")) // true
 console.log(validatePIN("1111")) // true

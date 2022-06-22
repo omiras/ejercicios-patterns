@@ -3,7 +3,21 @@
 // usa https://www.w3schools.com/jsref/jsref_match.asp para escribir una expresión regular que nos permita contar las letras que aparecen en minúsculas
 
 function lowercaseCount(str) {
-    //How many?
+
+    // Guardar en una variable la expresión regular
+    let detectarMinusculas = /[a-z]/g;
+
+    // Al string "str" le aplico la expresión regular almacenada en 'detectarMinúsculas'
+    // 1. match devolverá un array con todas las concidencias, si hay al menos una
+    // 2. Si no hay ninguna captura, devuelve null
+    let coincidencias = str.match(detectarMinusculas);
+
+    if (!coincidencias) {
+        return 0;
+    }
+
+    return coincidencias.length;
+
 }
 
 console.log(lowercaseCount("abc"), 3);

@@ -9,7 +9,7 @@ function getOfflineUsers(users) {
     // usar https://www.w3schools.com/jsref/jsref_match.asp
     // junto https://javascript.info/regexp-lookahead-lookbehind#tasks
 
-    return users.match(/COMPLETAR-REGEXP/gm);
+    return users.match(/\w+(?=\sOFFLINE)/gm);
 }
 
 
@@ -20,4 +20,4 @@ marta ONLINE,
 macario OFFLINE
 `;
 
-console.log(getOfflineUsers(bbdd))
+console.log(getOfflineUsers(bbdd)); // ["pedro", "macario"] 

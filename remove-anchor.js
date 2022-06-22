@@ -8,11 +8,12 @@
  */
 
 function removeUrlAnchor(url) {
-    let regexp = /#/; // Modificar aquí
+    let regexp = /#[a-z]+/; // Modificar aquí
 
     return url.replace(regexp, '');
 }
 
 console.log(removeUrlAnchor('www.codewars.com#about'), 'www.codewars.com')
+console.log(removeUrlAnchor('www.codewars.com#home'), 'www.codewars.com')
 console.log(removeUrlAnchor('www.codewars.com/katas/?page=1#about'), 'www.codewars.com/katas/?page=1')
 console.log(removeUrlAnchor('www.codewars.com/katas/'), 'www.codewars.com/katas/')
