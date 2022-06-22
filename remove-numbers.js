@@ -3,6 +3,10 @@
 
 function stringClean(s) {
     // Function will return the cleaned string
+    // test, match o replace , y la expresión regular adecuada
+
+    let cleanDigits = /\d/g;
+    return s.replace(cleanDigits, '');
 }
 
 console.log(stringClean(""), "")
